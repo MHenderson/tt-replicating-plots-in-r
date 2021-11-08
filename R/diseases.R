@@ -27,4 +27,4 @@ diseases %>%
   ) +
   theme_ipsum_rc()
 
-ggsave(here("plots", "diseases.png"), bg = "white")
+ggsave(here("plots", "diseases.png"), bg = "white", height = 3000, width = 2000, units = "px")

@@ -22,4 +22,4 @@ gun_murders %>%
   coord_flip() +
   theme_ipsum_rc()
 
-ggsave(here("plots", "gun-murders.png"), bg = "white")
+ggsave(here("plots", "gun-murders.png"), bg = "white", height = 2000, width = 2000, units = "px")
