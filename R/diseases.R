@@ -6,18 +6,18 @@ library(readr)
 
 diseases <- read_csv(here("data-raw", "diseases.csv"))
 
-diseases %>%
-  filter(disease == "Measles") %>%
-  mutate(rate = count / population * 10000 * 52 / weeks_reporting) %>%
-  mutate(state = reorder(state, desc(state))) %>%
+X <- diseases %>%
+  mutate(rate = count / population * 100000 * 52 / weeks_reporting) %>%
+  mutate(state = reorder(state, desc(state)))
+
+colours <- colorRampPalette(c("royalblue", "green", "yellow", "orange", "red"), bias = 3.5)
+
+X %>%
+  filter(disease %in% c("Pertussis", "Measles", "Polio")) %>%
   ggplot(aes(year, state, fill = rate)) +
   geom_tile(color = "white", size = 0.35) +
   scale_x_continuous(expand = c(0,0)) +
-  scale_fill_gradient(
-    low = "azure2",
-    high = "darkslategrey",
-    na.value = 'white'
-  ) +
+  scale_fill_gradientn(colors = colours(20), na.value = 'grey95') +
   labs(
     x = "",
     y = "",
@@ -25,6 +25,10 @@ diseases %>%
     subtitle = "The Impact of Vaccines",
     caption = ""
   ) +
-  theme_ipsum_rc()
+  theme_ipsum_rc() +
+  theme(
+    legend.position = "bottom"
+  ) +
+  facet_wrap(~disease, ncol = 1, scales = "free_x")
 
-ggsave(here("plots", "diseases.png"), bg = "white", height = 3000, width = 2000, units = "px")
+ggsave(here("plots", "diseases.png"), bg = "white", height = 9000, width = 3000, units = "px")
