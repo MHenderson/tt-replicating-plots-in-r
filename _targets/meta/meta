@@ -1,0 +1,4 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|64d55b7922c799ff
+gun_murders|stem|9a7bb501e963fb0a|6a53fe5704f1ae1d|2c530c1562a7fbd1|-347163939||t20138.3941852156s|s586b|586|rds|local|vector|||0.872||
+diseases|stem|1aded8e29933b002|4d8be2e52e465e4a|2c530c1562a7fbd1|-991918967||t20138.39419804s|s85762b|85762|rds|local|vector|||0.989||
