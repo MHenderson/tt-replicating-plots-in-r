@@ -1,10 +1,4 @@
-Tidy Tuesday: Replicating Plots in R
-================
-Matthew Henderson
-2021-11-08
-
--   [Diseases](#diseases)
--   [Gun Murders](#gun-murders)
+# tt-replicating-plots-in-r
 
 ## Diseases
 
@@ -13,3 +7,4 @@ Matthew Henderson
 ## Gun Murders
 
 ![](plots/gun-murders.png)
+

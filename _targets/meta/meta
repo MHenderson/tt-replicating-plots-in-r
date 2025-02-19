@@ -1,0 +1,9 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+gun_murders|stem|9a7bb501e963fb0a|6a53fe5704f1ae1d|2c530c1562a7fbd1|-347163939||t20138.3941852156s|s586b|586|rds|local|vector|||0.872||
+diseases|stem|1aded8e29933b002|4d8be2e52e465e4a|2c530c1562a7fbd1|-991918967||t20138.39419804s|s85762b|85762|rds|local|vector|||0.989||
+gun_murders_plot|stem|371e0f6a8f006c18|9a9506ec97d0a8fc|8e1c953330bd68e6|-762291103||t20138.4009381498s|s92041b|92041|rds|local|vector|||0.054||
+save_gun_murders_plot|stem|cc6eed0c37c4b091|44d42a47a8369266|2b02c69ab20e6611|1735568627||t20138.4027905066s|s74b|74|rds|local|vector|||0.45||
+disease_rates|stem|a868f008de456482|187a3bb4f4446082|ec6a5b05516f1d07|-1188465218||t20138.4089974544s|s178814b|178814|rds|local|vector|||0.068||
+diseases_plot|stem|9a17937e878f7cd7|52ce6fbd9deb92ed|b852cbf49f2a86b5|-793067154||t20138.4127558751s|s562433b|562433|rds|local|vector|||0.274|Using size aesthetic for lines was deprecated in ggplot2 3.4.0.ℹ Please use linewidth instead.|
+save_diseases_plot|stem|b06192e6c56e9276|5109a83887f7b31d|890095fdbbe2a309|1115409175||t20138.4127724033s|s71b|71|rds|local|vector|||1.41||
+.Random.seed|object|017b63d3b3e6b870
